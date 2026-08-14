@@ -1,0 +1,75 @@
+﻿=== Running benchmark.py ===
+Fri Aug 14 17:28:52 UTC 2026
+============================================================
+AI Lab 16 - LightGBM Credit Card Fraud Detection Benchmark
+============================================================
+
+[OK] Kaggle credentials found.
+[OK] Dataset already exists (143.8 MB)
+
+[1] Loading dataset...
+    Loaded 284,807 rows, 31 columns in 2.27s
+    Class distribution:
+{0: 284315, 1: 492}
+
+[2] Train: 227,845 rows | Test: 56,962 rows
+    Fraud ratio (train): 0.001729
+    Fraud ratio (test):  0.001720
+
+[3] Training LightGBM...
+Training until validation scores don't improve for 50 rounds
+[50]	train's auc: 0.983258	test's auc: 0.805838
+Early stopping, best iteration is:
+[1]	train's auc: 0.97982	test's auc: 0.936367
+
+    Training time: 3.38s | Best iteration: 1
+
+[4] Evaluating...
+    AUC-ROC:   0.936367
+    Accuracy:  0.978775
+    F1-Score:  0.124547
+    Precision: 0.067030
+    Recall:    0.877551
+    Confusion Matrix:
+      [[55667  1197]
+ [   12    86]]
+
+[5] Inference benchmark...
+    Latency (1 row):    0.4449 ms
+    Throughput (1000x10): 1544920.25 rows/sec
+
+[6] Saving results...
+    Saved to: /home/ubuntu/ml-benchmark/benchmark_result.json
+
+{
+  "platform": "AWS EC2 t3.medium (CPU)",
+  "region": "us-east-1",
+  "dataset": "mlg-ulb/creditcardfraud",
+  "rows_total": 284807,
+  "rows_train": 227845,
+  "rows_test": 56962,
+  "features": 30,
+  "load_time_sec": 2.269,
+  "train_time_sec": 3.3768,
+  "best_iteration": 1,
+  "auc_roc": 0.936367,
+  "accuracy": 0.978775,
+  "f1_score": 0.124547,
+  "precision": 0.06703,
+  "recall": 0.877551,
+  "confusion_matrix": [
+    [
+      55667,
+      1197
+    ],
+    [
+      12,
+      86
+    ]
+  ],
+  "inference_latency_ms_1row": 0.4449,
+  "inference_throughput_rows_per_sec": 1544920.25
+}
+
+[OK] Done.
+Fri Aug 14 17:28:59 UTC 2026

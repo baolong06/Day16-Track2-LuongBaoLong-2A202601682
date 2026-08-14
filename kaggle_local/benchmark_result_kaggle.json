@@ -1,0 +1,25 @@
+{
+  "platform": "Kaggle Notebooks (CPU)",
+  "dataset": "mlg-ulb/creditcardfraud",
+  "notebook_url": "https://www.kaggle.com/code/bolong0916/ai-lab-16-lightgbm-creditcard-fraud",
+  "dataset_url": "https://www.kaggle.com/datasets/bolong0916/creditcard-ulb",
+  "rows_total": 284807,
+  "rows_train": 227845,
+  "rows_test": 56962,
+  "features": 30,
+  "load_time_sec": 4.0372,
+  "train_time_sec": 2.6865,
+  "best_iteration": 1,
+  "auc_roc": 0.936367,
+  "accuracy": 0.978775,
+  "f1_score": 0.124547,
+  "precision": 0.06703,
+  "recall": 0.877551,
+  "confusion_matrix": [
+    [55667, 1197],
+    [12, 86]
+  ],
+  "inference_latency_ms_1row": 1.2982,
+  "inference_throughput_rows_per_sec": 1148337.85,
+  "notes": "Run time: 35.7s. Credit Card Fraud Detection - Standard ULB benchmark dataset. Best iteration = 1 (early stopping triggered)."
+}

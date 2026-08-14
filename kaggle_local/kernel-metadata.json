@@ -1,0 +1,13 @@
+{
+  "id": "bolong0916/ai-lab-16-lightgbm-creditcard-fraud",
+  "title": "ai-lab-16-lightgbm-creditcard-fraud",
+  "code_file": "lab16_notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": false,
+  "dataset_sources": ["bolong0916/creditcard-ulb"],
+  "competition_sources": [],
+  "kernel_sources": []
+}

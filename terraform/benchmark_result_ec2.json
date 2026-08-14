@@ -1,0 +1,40 @@
+{
+  "platform": "AWS EC2 t3.small (CPU) - lab baseline used t3.medium but Free Tier restricted",
+  "region": "us-east-1",
+  "instance_type": "t3.small (4 vCPU-> 2 vCPU, 8 GB-> 2 GB RAM)",
+  "dataset": "mlg-ulb/creditcardfraud",
+  "dataset_url": "https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud",
+  "notebook_url": null,
+  "instance_public_ip_bastion": "52.73.247.226",
+  "instance_private_ip_compute": "10.0.10.58",
+  "alb_dns_name": "ai-inference-alb-bb6158d4-192807870.us-east-1.elb.amazonaws.com",
+  "rows_total": 284807,
+  "rows_train": 227845,
+  "rows_test": 56962,
+  "features": 30,
+  "load_time_sec": 2.2138,
+  "train_time_sec": 3.4093,
+  "best_iteration": 1,
+  "auc_roc": 0.936367,
+  "accuracy": 0.978775,
+  "f1_score": 0.124547,
+  "precision": 0.06703,
+  "recall": 0.877551,
+  "confusion_matrix": [
+    [55667, 1197],
+    [12, 86]
+  ],
+  "inference_latency_ms_1row": 0.4441,
+  "inference_throughput_rows_per_sec": 1523152.12,
+  "system_info": {
+    "kernel": "Linux ip-10-0-10-58 6.8.0-1061-aws",
+    "ubuntu_version": "22.04 LTS",
+    "vcpu": 2,
+    "ram_total_mb": 1910,
+    "ram_used_during_benchmark_mb": 257,
+    "disk_total_gb": 29,
+    "disk_used_gb": 2.9,
+    "load_average_during_benchmark": "0.28, 0.12, 0.08"
+  },
+  "notes": "Free Tier restrictions forced use of t3.small instead of t3.medium mentioned in lab. Lab benchmark.py created locally and uploaded via scp through bastion."
+}
